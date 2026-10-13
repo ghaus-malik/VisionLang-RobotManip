@@ -1,0 +1,12 @@
+# Isaac Sim 4.5 and Isaac Lab 2.1 are installed separately (see README).
+torch==2.7.0
+torchvision==0.22.0
+transformers==5.19.0
+h5py==3.16.0
+imageio==2.38.0
+imageio-ffmpeg==0.6.0
+opencv-python==4.11.0.86
+numpy==1.26.4
+PyYAML==6.0.3
+tensorboard==2.21.0
+pytest==9.1.1

@@ -1,0 +1,995 @@
+{
+  "stage": 1,
+  "trials": 20,
+  "grasp_success": 1.0,
+  "placement_success": 1.0,
+  "success_rate": 1.0,
+  "disturbed_trials": 0,
+  "mean_execution_time_s": 9.992,
+  "total_waypoint_timeouts": 0,
+  "wall_time_s": 114.5,
+  "seed": 0,
+  "jitter_m": 0.01,
+  "per_trial": [
+    {
+      "instruction": "put the blue block in the red box",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4527392337464291,
+            0.1153957342752774,
+            -0.24034570083421028
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4527397155761719,
+          "y": 0.11539554595947266,
+          "yaw": 1.3304535011437277,
+          "support_height": 0.045000017657876014,
+          "z_tcp": 0.021000017657876013
+        },
+        "place": {
+          "x": 0.5461822643277244,
+          "y": -0.13205936377871183,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.04,
+      "final_cube_pos": [
+        0.5448,
+        -0.1267,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "put the blue block in the red box",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4403305527105706,
+            0.12626540478400544,
+            0.2161183148839841
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44033050537109375,
+          "y": 0.1262650489807129,
+          "yaw": 0.21611388027668,
+          "support_height": 0.04499998226761818,
+          "z_tcp": 0.020999982267618178
+        },
+        "place": {
+          "x": 0.5336303125596281,
+          "y": -0.116786590119608,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.94,
+      "final_cube_pos": [
+        0.5324,
+        -0.1117,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Pick up the blue cube and place it in the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4521327155153436,
+            0.12458993121967997,
+            0.022841992116781673
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4521331787109375,
+          "y": 0.12458944320678711,
+          "yaw": 0.022844266146421432,
+          "support_height": 0.04499999716877937,
+          "z_tcp": 0.020999997168779372
+        },
+        "place": {
+          "x": 0.5419480360476202,
+          "y": -0.11312009044082766,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.96,
+      "final_cube_pos": [
+        0.5407,
+        -0.108,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "drop the blue cube into the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4587014484757554,
+            0.12631707108243065,
+            -0.26036551246308415
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.45870113372802734,
+          "y": 0.12631607055664062,
+          "yaw": 1.3104327778008322,
+          "support_height": 0.045000038146972655,
+          "z_tcp": 0.021000038146972655
+        },
+        "place": {
+          "x": 0.5379808084935919,
+          "y": -0.10231536113882211,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.96,
+      "final_cube_pos": [
+        0.5366,
+        -0.107,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "pick the blue cube and drop it in the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4571480855317514,
+            0.11067171150610929,
+            0.12024731056019944
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.45714759826660156,
+          "y": 0.1106719970703125,
+          "yaw": 0.120247982442379,
+          "support_height": 0.04499998413026333,
+          "z_tcp": 0.020999984130263327
+        },
+        "place": {
+          "x": 0.5446045974646564,
+          "y": -0.13578007437627285,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.04,
+      "final_cube_pos": [
+        0.5433,
+        -0.1302,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "put the blue block in the red box",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4435131124120512,
+            0.12726357844699773,
+            0.02170904415723579
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4435124397277832,
+          "y": 0.12726306915283203,
+          "yaw": 0.021708862856030464,
+          "support_height": 0.04499999530613422,
+          "z_tcp": 0.020999995306134223
+        },
+        "place": {
+          "x": 0.5551645167964516,
+          "y": -0.10291370343636734,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.02,
+      "final_cube_pos": [
+        0.5541,
+        -0.1077,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "drop the blue cube into the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4459942378107477,
+            0.11845374442395316,
+            -0.24697124266203851
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44599437713623047,
+          "y": 0.1184532642364502,
+          "yaw": 1.3238262395050864,
+          "support_height": 0.04500002697110176,
+          "z_tcp": 0.02100002697110176
+        },
+        "place": {
+          "x": 0.5476152769234947,
+          "y": -0.10181626581145255,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.98,
+      "final_cube_pos": [
+        0.5468,
+        -0.1089,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "pick the blue cube and drop it in the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4424856655299913,
+            0.12341248829387261,
+            0.077068248041189
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44248533248901367,
+          "y": 0.1234121322631836,
+          "yaw": 0.07706381380558014,
+          "support_height": 0.044999989718198775,
+          "z_tcp": 0.020999989718198775
+        },
+        "place": {
+          "x": 0.5499960232823692,
+          "y": -0.12299074056511901,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.02,
+      "final_cube_pos": [
+        0.5487,
+        -0.1179,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "grab the blue cube and put it in the red container",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4523077022296251,
+            0.11767355108523767,
+            0.2603385135945397
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4523072838783264,
+          "y": 0.11767387390136719,
+          "yaw": 0.2603375017642975,
+          "support_height": 0.04499997481703758,
+          "z_tcp": 0.02099997481703758
+        },
+        "place": {
+          "x": 0.554808550001544,
+          "y": -0.10019602534966907,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.94,
+      "final_cube_pos": [
+        0.5537,
+        -0.1082,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "place the blue block in the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.45961670677552463,
+            0.12371083968961388,
+            0.07878029283123478
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4596163034439087,
+          "y": 0.12371039390563965,
+          "yaw": 0.07877978682518005,
+          "support_height": 0.044999987855553626,
+          "z_tcp": 0.020999987855553626
+        },
+        "place": {
+          "x": 0.5679577589184396,
+          "y": -0.12159807998671819,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.12,
+      "final_cube_pos": [
+        0.5667,
+        -0.1162,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Move the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4537689346114188,
+            0.11777842847958207,
+            -0.19106302318180546
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4537685811519623,
+          "y": 0.11777806282043457,
+          "yaw": 1.379735262193952,
+          "support_height": 0.04500002324581146,
+          "z_tcp": 0.02100002324581146
+        },
+        "place": {
+          "x": 0.5603091657332606,
+          "y": -0.12010297773957727,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.06,
+      "final_cube_pos": [
+        0.559,
+        -0.1147,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "drop the blue cube into the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.45442976680388164,
+            0.12050708644951451,
+            -0.09935712161716043
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.45442938804626465,
+          "y": 0.12050724029541016,
+          "yaw": 1.4714398692038397,
+          "support_height": 0.045000015795230865,
+          "z_tcp": 0.021000015795230864
+        },
+        "place": {
+          "x": 0.5511724983287998,
+          "y": -0.10856845753052974,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.98,
+      "final_cube_pos": [
+        0.5488,
+        -0.1099,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Move the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4497167071766358,
+            0.12778975668698,
+            0.227264653511073
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44971609115600586,
+          "y": 0.12778949737548828,
+          "yaw": 0.22726397216320038,
+          "support_height": 0.04499997295439243,
+          "z_tcp": 0.020999972954392432
+        },
+        "place": {
+          "x": 0.5465864247090901,
+          "y": -0.11062054268753285,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.98,
+      "final_cube_pos": [
+        0.5463,
+        -0.1153,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Put the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4471559039341814,
+            0.12143059661459521,
+            -0.09326896872921608
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4471554756164551,
+          "y": 0.1214301586151123,
+          "yaw": 1.4775305251267294,
+          "support_height": 0.045000012069940566,
+          "z_tcp": 0.021000012069940566
+        },
+        "place": {
+          "x": 0.5584459058544533,
+          "y": -0.1027174980945469,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.0,
+      "final_cube_pos": [
+        0.5572,
+        -0.1075,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "drop the blue cube into the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4518860006039939,
+            0.11675822451014266,
+            -0.056748158621574646
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4518857002258301,
+          "y": 0.11675786972045898,
+          "yaw": 1.5140501941230635,
+          "support_height": 0.04500000648200512,
+          "z_tcp": 0.021000006482005118
+        },
+        "place": {
+          "x": 0.5345974960660995,
+          "y": -0.11083928087602965,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.9,
+      "final_cube_pos": [
+        0.5334,
+        -0.1056,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Move the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4578054870400959,
+            0.11454315187066759,
+            0.0645006381270623
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.45780515670776367,
+          "y": 0.11454296112060547,
+          "yaw": 0.06449848413467407,
+          "support_height": 0.044999991580843925,
+          "z_tcp": 0.020999991580843924
+        },
+        "place": {
+          "x": 0.5670971478798457,
+          "y": -0.10128283796209618,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.98,
+      "final_cube_pos": [
+        0.5663,
+        -0.1083,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "drop the blue cube into the red bin",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4416803068716477,
+            0.12665288295306795,
+            0.15032432227741854
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.4416799545288086,
+          "y": 0.12665271759033203,
+          "yaw": 0.1503181904554367,
+          "support_height": 0.04499998040497303,
+          "z_tcp": 0.02099998040497303
+        },
+        "place": {
+          "x": 0.5305884429334781,
+          "y": -0.105454281949259,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.94,
+      "final_cube_pos": [
+        0.5297,
+        -0.1021,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Put the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4447873888598591,
+            0.12752968461621408,
+            -0.2311332364859511
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44478702545166016,
+          "y": 0.12752914428710938,
+          "yaw": 1.339662910499845,
+          "support_height": 0.04500002510845661,
+          "z_tcp": 0.02100002510845661
+        },
+        "place": {
+          "x": 0.5692479923375171,
+          "y": -0.10171147837464349,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.08,
+      "final_cube_pos": [
+        0.5683,
+        -0.1089,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "Put the blue cube into the red bin.",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4467223412109132,
+            0.11300558933789678,
+            -0.02600224681786939
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.44672203063964844,
+          "y": 0.11300516128540039,
+          "yaw": 1.5447960952904563,
+          "support_height": 0.04500000461935997,
+          "z_tcp": 0.02100000461935997
+        },
+        "place": {
+          "x": 0.5359507512241632,
+          "y": -0.10109473300616383,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 9.86,
+      "final_cube_pos": [
+        0.5352,
+        -0.1084,
+        0.0285
+      ]
+    },
+    {
+      "instruction": "grab the blue cube and put it in the red container",
+      "task": "pick_place",
+      "object": "blue",
+      "destination": "red",
+      "layout": {
+        "cubes": {
+          "blue": [
+            0.4559264854057459,
+            0.11461284417987494,
+            -0.23456109825679405
+          ]
+        },
+        "bins": {
+          "red": [
+            0.55,
+            -0.12
+          ]
+        }
+      },
+      "expert": {
+        "pick": {
+          "x": 0.45592689514160156,
+          "y": 0.11461257934570312,
+          "yaw": 1.3362438390639166,
+          "support_height": 0.04500003069639206,
+          "z_tcp": 0.021000030696392058
+        },
+        "place": {
+          "x": 0.5655976129636842,
+          "y": -0.10710493245735922,
+          "yaw": 0.0,
+          "support_height": 0.006,
+          "z_tcp": 0.039
+        }
+      },
+      "grasp_ok": true,
+      "placed": true,
+      "disturbed": [],
+      "success": true,
+      "finished": true,
+      "waypoint_timeouts": 0,
+      "execution_time_s": 10.04,
+      "final_cube_pos": [
+        0.5642,
+        -0.1017,
+        0.0285
+      ]
+    }
+  ]
+}

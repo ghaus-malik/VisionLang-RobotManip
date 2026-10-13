@@ -1,0 +1,58 @@
+{
+  "checkpoint": "runs/full_v2/last.pt",
+  "seed": 10000,
+  "suites": {
+    "pick_place_heldout": {
+      "trials": 100,
+      "correct_object_selection": 0.94,
+      "grasp_success": 0.94,
+      "correct_destination_selection": 1.0,
+      "overall_success": 0.94,
+      "mean_execution_time_s": 10.259400000000001,
+      "mean_inference_time_ms": 6.582343578338623,
+      "bin_placement_success": 0.94
+    },
+    "stack_reordered": {
+      "trials": 100,
+      "correct_object_selection": 0.99,
+      "grasp_success": 0.89,
+      "correct_destination_selection": 0.87,
+      "overall_success": 0.87,
+      "mean_execution_time_s": 9.751600000000002,
+      "mean_inference_time_ms": 4.96060848236084,
+      "stacking_success": 0.87
+    }
+  },
+  "overall": {
+    "trials": 200,
+    "correct_object_selection": 0.965,
+    "grasp_success": 0.915,
+    "correct_destination_selection": 0.935,
+    "overall_success": 0.905,
+    "mean_execution_time_s": 10.0055,
+    "mean_inference_time_ms": 5.7714760303497314,
+    "bin_placement_success": 0.94,
+    "stacking_success": 0.87
+  },
+  "heldout_phrasings": {
+    "trials": 100,
+    "correct_object_selection": 0.94,
+    "grasp_success": 0.94,
+    "correct_destination_selection": 1.0,
+    "overall_success": 0.94,
+    "mean_execution_time_s": 10.259400000000001,
+    "mean_inference_time_ms": 6.582343578338623,
+    "bin_placement_success": 0.94
+  },
+  "reordered_phrasings": {
+    "trials": 100,
+    "correct_object_selection": 0.99,
+    "grasp_success": 0.89,
+    "correct_destination_selection": 0.87,
+    "overall_success": 0.87,
+    "mean_execution_time_s": 9.751600000000002,
+    "mean_inference_time_ms": 4.96060848236084,
+    "stacking_success": 0.87
+  },
+  "wall_time_s": 860.6
+}

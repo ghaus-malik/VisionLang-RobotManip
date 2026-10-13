@@ -1,0 +1,169 @@
+{
+  "layout": {
+    "cubes": {
+      "red": [
+        0.38,
+        0.15,
+        0.0
+      ],
+      "blue": [
+        0.38,
+        0.05,
+        0.3
+      ],
+      "green": [
+        0.38,
+        -0.05,
+        0.6
+      ],
+      "yellow": [
+        0.38,
+        -0.15,
+        0.9
+      ]
+    },
+    "bins": {
+      "red": [
+        0.6,
+        0.17
+      ],
+      "blue": [
+        0.6,
+        0.05
+      ],
+      "green": [
+        0.6,
+        -0.07
+      ],
+      "yellow": [
+        0.6,
+        -0.19
+      ]
+    }
+  },
+  "checks": {
+    "cube_red": {
+      "true_top": 0.045,
+      "map_height": 0.045,
+      "rgb": [
+        0.86,
+        0.32,
+        0.32
+      ],
+      "pass": true
+    },
+    "cube_blue": {
+      "true_top": 0.045,
+      "map_height": 0.045,
+      "rgb": [
+        0.32,
+        0.59,
+        0.86
+      ],
+      "pass": true
+    },
+    "cube_green": {
+      "true_top": 0.045,
+      "map_height": 0.045,
+      "rgb": [
+        0.36,
+        0.82,
+        0.52
+      ],
+      "pass": true
+    },
+    "cube_yellow": {
+      "true_top": 0.045,
+      "map_height": 0.045,
+      "rgb": [
+        0.86,
+        0.84,
+        0.35
+      ],
+      "pass": true
+    },
+    "bin_red": {
+      "floor": 0.006,
+      "wall": 0.04,
+      "pass": true
+    },
+    "bin_blue": {
+      "floor": 0.006,
+      "wall": 0.04,
+      "pass": true
+    },
+    "bin_green": {
+      "floor": 0.006,
+      "wall": 0.04,
+      "pass": true
+    },
+    "bin_yellow": {
+      "floor": 0.006,
+      "wall": 0.04,
+      "pass": true
+    },
+    "map_vs_reference": {
+      "wrong_fraction": 0.002,
+      "pass": true
+    },
+    "intrinsics": {
+      "fx": 438.86,
+      "expected": 438.86,
+      "pass": true
+    }
+  },
+  "poses": {
+    "isaac_default": {
+      "wrong_cells": 2623,
+      "hand_pos": [
+        0.389,
+        0.0,
+        0.458
+      ],
+      "max_link_x": 0.432
+    },
+    "folded": {
+      "wrong_cells": 52,
+      "hand_pos": [
+        0.216,
+        -0.0,
+        0.43
+      ],
+      "max_link_x": 0.216
+    },
+    "folded_high": {
+      "wrong_cells": 52,
+      "hand_pos": [
+        0.105,
+        -0.0,
+        0.456
+      ],
+      "max_link_x": 0.108
+    },
+    "side": {
+      "wrong_cells": 52,
+      "hand_pos": [
+        0.0,
+        -0.311,
+        0.498
+      ],
+      "max_link_x": 0.04
+    }
+  },
+  "observation_pose": "folded",
+  "camera": {
+    "pos": [
+      0.5,
+      0.0,
+      1.2000000476837158
+    ],
+    "quat_ros": [
+      -5.805445765263951e-16,
+      0.7071067690849304,
+      -0.7071067690849304,
+      -1.2560739454502297e-15
+    ]
+  },
+  "physics_steps_per_s": 553.6,
+  "passed": "10/10"
+}

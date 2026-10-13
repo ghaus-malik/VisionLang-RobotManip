@@ -1,0 +1,106 @@
+# Default configuration. Lengths in metres, angles in degrees unless stated otherwise.
+# The robot base sits at the world origin on the table top (z = 0); +x points away from the robot.
+
+scene:
+  colors: [red, blue, green, yellow]
+  cube_size: 0.045          # edge length
+  cube_mass: 0.05           # kg
+  cube_friction: 1.2
+  bin_inner: 0.11           # free inner width of a bin (square)
+  bin_wall_thickness: 0.008
+  bin_wall_height: 0.04
+  bin_floor_thickness: 0.006
+  table_size: [1.4, 1.2, 0.05]
+  table_center_xy: [0.45, 0.0]
+
+# Region in which object centres are sampled for random layouts (keeps every bin fully inside the
+# 0.56 m x 0.56 m top-down map and within comfortable reach of the arm).
+layout:
+  region_x: [0.29, 0.71]
+  region_y: [-0.21, 0.21]
+  gap_cube: 0.035           # minimum free space around a cube's bounding square (room for the open fingers)
+  gap_bin: 0.02             # minimum free space between two bins
+  max_tries: 2000
+
+# Top-down orthographic map built from the overhead RGB-D camera (rows = -x, cols = -y, like the image).
+workspace:
+  x_range: [0.22, 0.78]
+  y_range: [-0.28, 0.28]
+  resolution: 0.0035        # metres per pixel -> 160 x 160
+  num_rotations: 8          # gripper yaw bins over 90 deg (cubes and bins are 90-deg symmetric)
+
+camera:
+  overhead_pos: [0.5, 0.0, 1.2]
+  width: 256
+  height: 256
+  focal_length: 24.0        # mm
+  horizontal_aperture: 14.0 # mm -> ~32.5 deg field of view, ~0.70 m wide at the table
+  video_size: 480
+  perspective_eye: [1.30, 0.85, 0.75]
+  perspective_target: [0.45, 0.0, 0.05]
+  dome_intensity: 300.0
+  sun_intensity: 600.0
+  antialiasing: DLAA        # native-resolution anti-aliasing (DLSS would render below 256 px and upscale)
+
+control:
+  sim_dt: 0.01
+  decimation: 2             # controller runs at 50 Hz
+  tcp_offset: 0.1034        # panda_hand origin -> point between the fingertips, along the hand z axis
+  approach_height: 0.10     # pre-grasp / pre-place height above the target
+  transit_height: 0.20      # minimum TCP height while carrying a cube
+  grasp_depth: 0.024        # TCP below the top face of the cube when closing (fingers cover its middle)
+  place_clearance: 0.012    # gap between the held cube and the support surface at release
+  max_linear_step: 0.006    # metres per control step for interpolated waypoints (0.3 m/s at 50 Hz)
+  position_tolerance: 0.006
+  fine_position_tolerance: 0.002  # for the final descent onto a cube / into a bin
+  yaw_tolerance_deg: 4.0
+  waypoint_timeout_s: 4.0
+  gripper_open: 0.04        # finger joint position (each finger)
+  gripper_closed: 0.0
+  gripper_settle_s: 0.6
+  grasp_min_width: 0.012    # finger joint sum after lifting: ~0.027 holding a cube (thick pads), ~0 when empty
+  home_joint_step: 0.025    # rad per control step when returning to the ready pose (1.25 rad/s)
+  ready_joint_pos: [0.0, -1.2, 0.0, -2.95, 0.0, 1.75, 0.785]  # folded back: the arm hides nothing from the overhead camera
+  workspace_min: [0.15, -0.40, 0.0]
+  workspace_max: [0.85, 0.40, 0.45]
+
+success:
+  bin_margin: 0.0           # cube centre must lie inside the bin interior (minus this margin)
+  bin_max_height: 0.06
+  stack_xy_tolerance: 0.02
+  stack_z_tolerance: 0.012
+  settle_s: 1.0
+  max_settled_speed: 0.02   # m/s
+  disturb_tolerance: 0.01   # a non-target cube that moved more than this (m) counts as disturbed
+
+model:
+  clip_name: openai/clip-vit-base-patch16
+  clip_image_size: 224
+  base_channels: 64
+  dim: 256                  # width of the 20 x 20 fusion tokens
+  fusion_depth: 2           # transformer blocks per head (self-attention + cross-attention to words)
+  pick_sigma_px: 1.5        # spatial label smoothing of the targets
+  place_sigma_px: 2.0
+  rot_sigma_bins: 0.5       # yaw label smoothing (bins)
+  height_scale: 0.05        # height map is divided by this before entering the network
+
+train:
+  seed: 0
+  batch_size: 32
+  iterations: 20000
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  warmup_iterations: 500
+  val_fraction: 0.05
+  augment_rot90: true
+  augment_flip: true
+  augment_shift_px: 8
+  amp: true                 # bfloat16 autocast
+  grad_clip: 1.0
+  log_every: 50
+  val_every: 1000
+  save_every: 2000
+
+seeds:
+  demos_train: 0
+  eval: 10000
