@@ -9,8 +9,30 @@ on other cubes, following a natural-language instruction such as *"Put the red c
 The policy is learned by imitation from a scripted expert. At test time it sees **only** the overhead RGB-D
 camera and the instruction text; ground-truth object poses are used only to score the outcome.
 
-![pick-and-place example](docs/example_pick_place.png)
-![stacking example](docs/example_stacking.png)
+## Test videos
+
+Final model on unseen evaluation layouts (1.5× speed). Full-length MP4s are in [`videos/`](videos).
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/gifs/pick_place_000.gif" width="420"><br>
+      <em>"place the green block in the yellow bin"</em><br>pick-and-place, seen phrasing: <b>success</b></td>
+    <td align="center"><img src="docs/gifs/stack_000.gif" width="420"><br>
+      <em>"place the blue block onto the green block"</em><br>stacking, seen phrasing: <b>success</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/gifs/pick_place_reordered_000.gif" width="420"><br>
+      <em>"Into the blue bin, put the red cube."</em><br>pick-and-place, unseen destination-first phrasing: <b>success</b></td>
+    <td align="center"><img src="docs/gifs/stack_heldout_000.gif" width="420"><br>
+      <em>"build a tower with the green cube on the red cube"</em><br>stacking, unseen phrasing: <b>success</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/gifs/pick_place_heldout_019.gif" width="420"><br>
+      <em>"the green cube goes in the yellow bin"</em><br>unseen phrasing: <b>failure</b>, picks the yellow cube</td>
+    <td align="center"><img src="docs/gifs/stack_reordered_006.gif" width="420"><br>
+      <em>"Cover the blue cube with the yellow cube."</em><br>unseen phrasing: <b>failure</b>, places the cube back on itself</td>
+  </tr>
+</table>
 
 ## Results
 
